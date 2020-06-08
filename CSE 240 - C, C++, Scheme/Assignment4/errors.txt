@@ -1,0 +1,192 @@
+In file included from /usr/include/c++/4.8.2/random:35:0,
+                 from grabbag.h:3,
+                 from fowler_august_hw4.h:5,
+                 from fowler_august_hw4.cpp:6:
+/usr/include/c++/4.8.2/bits/c++0x_warning.h:32:2: error: #error This file requires compiler and library support for the ISO C++ 2011 standard. This support is currently experimental, and must be enabled with the -std=c++11 or -std=gnu++11 compiler options.
+ #error This file requires compiler and library support for the \
+  ^
+In file included from fowler_august_hw4.h:5:0,
+                 from fowler_august_hw4.cpp:6:
+grabbag.h:29:23: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11 [enabled by default]
+   const char Hearts = 'H', Diamonds = 'D', Spades = 'S', Clubs = 'C';
+                       ^
+grabbag.h:29:39: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11 [enabled by default]
+   const char Hearts = 'H', Diamonds = 'D', Spades = 'S', Clubs = 'C';
+                                       ^
+grabbag.h:29:53: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11 [enabled by default]
+   const char Hearts = 'H', Diamonds = 'D', Spades = 'S', Clubs = 'C';
+                                                     ^
+grabbag.h:29:66: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11 [enabled by default]
+   const char Hearts = 'H', Diamonds = 'D', Spades = 'S', Clubs = 'C';
+                                                                  ^
+In file included from fowler_august_hw4.cpp:6:0:
+fowler_august_hw4.h:7:25: error: variable or field ‘startGame’ declared void
+ void startGame(grabBag::grabBag bag, std::vector<Card> drawn, int points);
+                         ^
+fowler_august_hw4.h:7:33: error: expected ‘)’ before ‘bag’
+ void startGame(grabBag::grabBag bag, std::vector<Card> drawn, int points);
+                                 ^
+fowler_august_hw4.h:7:56: error: expected primary-expression before ‘drawn’
+ void startGame(grabBag::grabBag bag, std::vector<Card> drawn, int points);
+                                                        ^
+fowler_august_hw4.h:7:63: error: expected primary-expression before ‘int’
+ void startGame(grabBag::grabBag bag, std::vector<Card> drawn, int points);
+                                                               ^
+fowler_august_hw4.h:8:29: error: variable or field ‘printAllCards’ declared void
+ void printAllCards(grabBag::grabBag bag);
+                             ^
+fowler_august_hw4.h:8:37: error: expected ‘)’ before ‘bag’
+ void printAllCards(grabBag::grabBag bag);
+                                     ^
+fowler_august_hw4.h:10:27: error: variable or field ‘prettyPrint’ declared void
+ void prettyPrint(grabBag::Card card);
+                           ^
+fowler_august_hw4.h:10:18: error: ‘Card’ is not a member of ‘grabBag’
+ void prettyPrint(grabBag::Card card);
+                  ^
+fowler_august_hw4.h:11:18: error: ‘Card’ is not a member of ‘grabBag’
+ int compareCards(grabBag::Card a, grabBag::Card b);
+                  ^
+fowler_august_hw4.h:11:35: error: ‘Card’ is not a member of ‘grabBag’
+ int compareCards(grabBag::Card a, grabBag::Card b);
+                                   ^
+fowler_august_hw4.h:11:50: error: expression list treated as compound expression in initializer [-fpermissive]
+ int compareCards(grabBag::Card a, grabBag::Card b);
+                                                  ^
+fowler_august_hw4.h:12:40: error: expected ‘)’ before ‘bag’
+ double probCardHigher(grabBag::grabBag bag, grabBag::Card card);
+                                        ^
+fowler_august_hw4.h:12:45: error: ‘Card’ is not a member of ‘grabBag’
+ double probCardHigher(grabBag::grabBag bag, grabBag::Card card);
+                                             ^
+fowler_august_hw4.h:12:63: error: expression list treated as compound expression in initializer [-fpermissive]
+ double probCardHigher(grabBag::grabBag bag, grabBag::Card card);
+                                                               ^
+fowler_august_hw4.h:13:39: error: expected ‘)’ before ‘bag’
+ double probCardLower(grabBag::grabBag bag, grabBag::Card card);
+                                       ^
+fowler_august_hw4.h:13:44: error: ‘Card’ is not a member of ‘grabBag’
+ double probCardLower(grabBag::grabBag bag, grabBag::Card card);
+                                            ^
+fowler_august_hw4.h:13:62: error: expression list treated as compound expression in initializer [-fpermissive]
+ double probCardLower(grabBag::grabBag bag, grabBag::Card card);
+                                                              ^
+fowler_august_hw4.h:14:39: error: expected ‘)’ before ‘bag’
+ double probCardGuess(grabBag::grabBag bag, grabBag::Card card);
+                                       ^
+fowler_august_hw4.h:14:44: error: ‘Card’ is not a member of ‘grabBag’
+ double probCardGuess(grabBag::grabBag bag, grabBag::Card card);
+                                            ^
+fowler_august_hw4.h:14:62: error: expression list treated as compound expression in initializer [-fpermissive]
+ double probCardGuess(grabBag::grabBag bag, grabBag::Card card);
+                                                              ^
+fowler_august_hw4.cpp: In function ‘int main()’:
+fowler_august_hw4.cpp:30:30: error: ‘startGame’ was not declared in this scope
+  startGame(bag, drawn, points);
+                              ^
+fowler_august_hw4.cpp: In function ‘void startGame(grabBag, std::vector<Card>, int)’:
+fowler_august_hw4.cpp:52:27: error: ‘prettyPrint’ was not declared in this scope
+   prettyPrint(drawn.back());
+                           ^
+fowler_august_hw4.cpp:53:96: error: ‘probCardLower’ cannot be used as a function
+   cout << "Probability next card is lower:       %" << (100.0 * probCardLower(bag, drawn.back())) << endl;
+                                                                                                ^
+fowler_august_hw4.cpp:54:97: error: ‘probCardHigher’ cannot be used as a function
+   cout << "Probability next card is higher:      %" << (100.0 * probCardHigher(bag, drawn.back())) << endl;
+                                                                                                 ^
+fowler_august_hw4.cpp:55:96: error: ‘probCardGuess’ cannot be used as a function
+   cout << "Probability you can guess next card:  %" << (100.0 * probCardGuess(bag, drawn.back())) << endl;
+                                                                                                ^
+fowler_august_hw4.cpp:67:24: error: ‘scanf_s’ was not declared in this scope
+   scanf_s(" %d", &input);
+                        ^
+fowler_august_hw4.cpp:75:42: error: ‘compareCards’ cannot be used as a function
+    if (compareCards(drawn.back(), newCard) == 1) {
+                                          ^
+fowler_august_hw4.cpp:91:42: error: ‘compareCards’ cannot be used as a function
+    if (compareCards(drawn.back(), newCard) == -1) {
+                                          ^
+fowler_august_hw4.cpp:129:35: error: ‘compareCards’ cannot be used as a function
+    if (compareCards(newCard, Guess) == 0) {
+                                   ^
+fowler_august_hw4.cpp:138:10: error: ‘exit’ was not declared in this scope
+    exit(0);
+          ^
+fowler_august_hw4.cpp:153:9: error: ‘class std::vector<Card>’ has no member named ‘shrink_to_fit’
+   drawn.shrink_to_fit();
+         ^
+fowler_august_hw4.cpp:156:8: warning: ‘auto’ changes meaning in C++11; please remove it [-Wc++0x-compat]
+   for (auto x = drawn.begin(); x != drawn.end(); x++) {
+        ^
+fowler_august_hw4.cpp:156:13: error: ‘x’ does not name a type
+   for (auto x = drawn.begin(); x != drawn.end(); x++) {
+             ^
+fowler_august_hw4.cpp:156:32: error: expected ‘;’ before ‘x’
+   for (auto x = drawn.begin(); x != drawn.end(); x++) {
+                                ^
+fowler_august_hw4.cpp:156:32: error: ‘x’ was not declared in this scope
+fowler_august_hw4.cpp: In function ‘int compareCards(Card, Card)’:
+fowler_august_hw4.cpp:177:32: error: ‘int compareCards(Card, Card)’ redeclared as different kind of symbol
+ int compareCards(Card a, Card b) {
+                                ^
+In file included from fowler_august_hw4.cpp:6:0:
+fowler_august_hw4.h:11:5: error: previous declaration of ‘int compareCards’
+ int compareCards(grabBag::Card a, grabBag::Card b);
+     ^
+fowler_august_hw4.cpp: In function ‘double probCardHigher(grabBag, Card)’:
+fowler_august_hw4.cpp:218:45: error: ‘double probCardHigher(grabBag, Card)’ redeclared as different kind of symbol
+ double probCardHigher(grabBag bag, Card card) {
+                                             ^
+In file included from fowler_august_hw4.cpp:6:0:
+fowler_august_hw4.h:12:8: error: previous declaration of ‘double probCardHigher’
+ double probCardHigher(grabBag::grabBag bag, grabBag::Card card);
+        ^
+fowler_august_hw4.cpp:225:37: error: ‘compareCards’ cannot be used as a function
+   if (compareCards(card, *node->card) > 0) countCardsHigher += 1;
+                                     ^
+fowler_august_hw4.cpp:228:36: error: ‘compareCards’ cannot be used as a function
+  if (compareCards(card, *node->card) > 0) countCardsHigher += 1;
+                                    ^
+fowler_august_hw4.cpp: In function ‘double probCardLower(grabBag, Card)’:
+fowler_august_hw4.cpp:237:44: error: ‘double probCardLower(grabBag, Card)’ redeclared as different kind of symbol
+ double probCardLower(grabBag bag, Card card) {
+                                            ^
+In file included from fowler_august_hw4.cpp:6:0:
+fowler_august_hw4.h:13:8: error: previous declaration of ‘double probCardLower’
+ double probCardLower(grabBag::grabBag bag, grabBag::Card card);
+        ^
+fowler_august_hw4.cpp:244:37: error: ‘compareCards’ cannot be used as a function
+   if (compareCards(card, *node->card) < 0) countCardsLower += 1;
+                                     ^
+fowler_august_hw4.cpp:247:36: error: ‘compareCards’ cannot be used as a function
+  if (compareCards(card, *node->card) < 0) countCardsLower += 1;
+                                    ^
+fowler_august_hw4.cpp: In function ‘double probCardGuess(grabBag, Card)’:
+fowler_august_hw4.cpp:256:44: error: ‘double probCardGuess(grabBag, Card)’ redeclared as different kind of symbol
+ double probCardGuess(grabBag bag, Card card) {
+                                            ^
+In file included from fowler_august_hw4.cpp:6:0:
+fowler_august_hw4.h:14:8: error: previous declaration of ‘double probCardGuess’
+ double probCardGuess(grabBag::grabBag bag, grabBag::Card card);
+        ^
+fowler_august_hw4.cpp: In function ‘void printAllCards(grabBag)’:
+fowler_august_hw4.cpp:269:26: error: ‘prettyPrint’ was not declared in this scope
+   prettyPrint(*node->card);
+                          ^
+fowler_august_hw4.cpp:272:25: error: ‘prettyPrint’ was not declared in this scope
+  prettyPrint(*node->card);
+                         ^
+fowler_august_hw4.cpp: In function ‘void printAllCards(std::vector<Card>)’:
+fowler_august_hw4.cpp:278:7: warning: ‘auto’ changes meaning in C++11; please remove it [-Wc++0x-compat]
+  for (auto x = drawn.begin(); x != drawn.end(); x++) {
+       ^
+fowler_august_hw4.cpp:278:12: error: ‘x’ does not name a type
+  for (auto x = drawn.begin(); x != drawn.end(); x++) {
+            ^
+fowler_august_hw4.cpp:278:31: error: expected ‘;’ before ‘x’
+  for (auto x = drawn.begin(); x != drawn.end(); x++) {
+                               ^
+fowler_august_hw4.cpp:278:31: error: ‘x’ was not declared in this scope
+fowler_august_hw4.cpp:281:17: error: ‘prettyPrint’ was not declared in this scope
+   prettyPrint(*x);
+                 ^
